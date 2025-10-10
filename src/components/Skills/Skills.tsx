@@ -67,6 +67,7 @@ import "react-circular-progressbar/dist/styles.css";
 const coreSkills = [
   { name: "HTML", level: 95, color: "from-orange-500 to-yellow-400" },
   { name: "CSS", level: 90, color: "from-blue-500 to-cyan-400" },
+  { name: "Bootstrap", level: 90, color: "from-indigo-500 to-purple-400" },
   { name: "JavaScript", level: 85, color: "from-yellow-400 to-orange-400" },
   { name: "React.js", level: 80, color: "from-cyan-400 to-blue-500" },
   { name: "Next.js", level: 75, color: "from-gray-700 to-black" },
@@ -91,7 +92,7 @@ const softSkills = [
 
 export default function Skills() {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="container py-20 bg-gradient-to-l from-gray-100 to-gray-300 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-6">
         {/* Title */}
         <div className="text-center mb-14">
@@ -112,7 +113,7 @@ export default function Skills() {
           <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
             Core Skills
           </h3>
-          <div className="space-y-6">
+          <div className="space-y-6 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
             {coreSkills.map((skill, i) => (
               <div key={i}>
                 <div className="flex justify-between mb-1">
@@ -123,7 +124,7 @@ export default function Skills() {
                     {skill.level}%
                   </span>
                 </div>
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
+                <div className="w-full bg-gray-400 dark:bg-gray-800 rounded-full h-3 overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
