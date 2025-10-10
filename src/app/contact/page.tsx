@@ -2,7 +2,10 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 
 export default function ContactPage() {
   return (
-    <main className="bg-gray-300 container flex justify-center px-6 py-20">
+    <main
+      id="contact"
+      className="bg-gray-300 container flex justify-center px-6 py-20"
+    >
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 bg-white shadow-xl rounded-2xl overflow-hidden">
         {/* Left Side — Info or Image */}
         <div className="bg-indigo-600 text-white p-10 flex flex-col justify-center">

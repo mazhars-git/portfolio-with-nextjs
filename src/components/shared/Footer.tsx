@@ -1,15 +1,22 @@
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react"; // npm i lucide-react
+import { Facebook, Github, Linkedin, Mail } from "lucide-react"; // npm i lucide-react
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-[#061a40] text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold text-white">MyPortfolio</h3>
-            <p className="mt-4 text-sm">
+            <Image
+              src="/images/mazhar (2).png"
+              width={150}
+              height={150}
+              alt="logo"
+              className="object-cover"
+            />
+            <p className="mt-2 text-sm">
               A showcase of my work, passion and creativity.
             </p>
           </div>
@@ -45,6 +52,14 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white">Connect</h4>
             <div className="mt-4 flex space-x-4">
+              <a
+                href="https://facebook.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
               <a
                 href="https://github.com/yourusername"
                 target="_blank"

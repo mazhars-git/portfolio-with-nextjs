@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // npm i lucide-react for icons
+import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,8 +11,8 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -20,7 +21,13 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center text-2xl font-bold text-indigo-600">
-            MyPortfolio
+            <Image
+              src="/images/mazhar (2).png"
+              alt="logo"
+              width={150}
+              height={100}
+              className="object-cover"
+            />
           </div>
 
           {/* Desktop Menu */}
