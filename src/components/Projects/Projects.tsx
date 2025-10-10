@@ -107,7 +107,7 @@ export default function Projects() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
-                className="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-indigo-500/40 transition"
+                className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-indigo-500/40 transition"
               >
                 {/* Image */}
                 <div className="relative w-full h-48">
