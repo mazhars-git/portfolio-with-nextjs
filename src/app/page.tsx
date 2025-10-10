@@ -4,6 +4,8 @@ import ContactPage from "./contact/page";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import About from "@/components/About/About";
 import Skills from "@/components/Skills/Skills";
+import Services from "@/components/ServicesSection/Services";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -11,8 +13,9 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
+      <Services />
       <Projects />
-
+      <Testimonials />
       <BlogSection />
       <ContactPage />
     </div>
