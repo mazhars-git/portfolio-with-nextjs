@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const posts = [
   {
@@ -36,18 +38,32 @@ export default function BlogSection() {
   return (
     <section className="container py-16 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-indigo-600">
-          📚 Latest Blog Posts
-        </h2>
+        {/* Section Title */}
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl text-center font-bold text-gray-800 dark:text-white mb-8"
+        >
+          📚 Latest{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-500">
+            Blogs
+          </span>
+        </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
-            <div
+            <motion.div
               key={post.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-orange-300 rounded-xl overflow-hidden shadow-lg hover:shadow-indigo-500/40 transition"
             >
-              <img
+              <Image
                 src={post.image}
+                width={150}
+                height={150}
                 alt={post.title}
                 className="w-full h-48 object-cover"
               />
@@ -66,7 +82,7 @@ export default function BlogSection() {
                   Read More →
                 </Link>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
