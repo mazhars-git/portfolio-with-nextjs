@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
