@@ -6,6 +6,7 @@ import About from "@/components/About/About";
 import Skills from "@/components/Skills/Skills";
 import Services from "@/components/ServicesSection/Services";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import CTASection from "@/components/CTASection/CTASection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Projects />
       <Testimonials />
+      <CTASection />
       <BlogSection />
       <ContactPage />
     </div>
