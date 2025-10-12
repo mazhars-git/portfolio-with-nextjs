@@ -26,8 +26,6 @@
 //         </nav>
 //       </aside>
 
-import DashboardLayout from "@/components/Dashboard/DashboardLayout";
-
 //       {/* Main Content */}
 //       <main className="flex-1 pt-20 p-8 bg-gray-100 dark:bg-gray-900">
 //         {children}
@@ -38,6 +36,8 @@ import DashboardLayout from "@/components/Dashboard/DashboardLayout";
 
 // app/dashboard/layout.jsx
 
-export default function DashboardLayoutWrapper({ children }) {
+import DashboardLayout from "@/components/Dashboard/DashboardLayout";
+
+export default function DashboardLayoutWrapper({ children }: any) {
   return <DashboardLayout>{children}</DashboardLayout>;
 }

@@ -8,6 +8,7 @@ import {
   MessageSquare,
   ArrowLeft,
   LogOut,
+  Menu,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -42,16 +43,16 @@ export default function DashboardLayout({ children }) {
   ];
 
   return (
-    <div className="flex min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+    <div className="flex min-h-screen bg-gradient-to-br from-indigo-400 via-white to-purple-500 pt-16">
       {/* SIDEBAR */}
       <motion.aside
         animate={{ width: collapsed ? 80 : 240 }}
-        className="bg-white shadow-md border-r flex flex-col transition-all duration-300"
+        className="bg-gradient-to-t from-indigo-400 via-white to-purple-400 shadow-lg flex flex-col transition-all duration-300"
       >
         {/* Logo Section */}
-        <div className="flex items-center justify-between p-4 border-b">
+        <div className="flex items-center justify-between p-4">
           <h1
-            className={`text-xl font-bold text-indigo-600 transition-opacity ${
+            className={`text-xl font-bold text-indigo-500 transition-opacity ${
               collapsed ? "opacity-0 w-0" : "opacity-100"
             }`}
           >
@@ -59,9 +60,9 @@ export default function DashboardLayout({ children }) {
           </h1>
           <button
             onClick={() => setCollapsed(!collapsed)}
-            className="text-gray-500 hover:text-indigo-600"
+            className="text-black hover:text-white border-2 rounded-sm p-0.5"
           >
-            ☰
+            <Menu />
           </button>
         </div>
 
