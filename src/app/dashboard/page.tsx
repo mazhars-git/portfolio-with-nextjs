@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Dashboard() {
   return (
-    <div className="container mx-auto min-h-screen bg-gray-100 dark:bg-gray-900 px-8 pt-20">
+    <div className="container mx-auto min-h-screen bg-gray-100 dark:bg-gray-900 px-8 pt-10">
       <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">
         Portfolio{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-500">
