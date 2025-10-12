@@ -13,7 +13,7 @@ export default function Dashboard() {
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <Link
-          href="/dashboard/projects"
+          href="/dashboard/manageProjects"
           className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition text-center"
         >
           <h2 className="font-semibold text-gray-800 dark:text-white mb-2">
@@ -24,7 +24,7 @@ export default function Dashboard() {
           </p>
         </Link>
         <Link
-          href="/dashboard/blogs"
+          href="/dashboard/manageBlogs"
           className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition text-center"
         >
           <h2 className="font-semibold text-gray-800 dark:text-white mb-2">
@@ -35,7 +35,7 @@ export default function Dashboard() {
           </p>
         </Link>
         <Link
-          href="/dashboard/testimonials"
+          href="/dashboard/manageTestimonials"
           className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition text-center"
         >
           <h2 className="font-semibold text-gray-800 dark:text-white mb-2">
