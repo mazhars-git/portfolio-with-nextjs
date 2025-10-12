@@ -109,7 +109,7 @@ export default function DashboardLayout({ children }) {
         className="flex-1 p-6"
       >
         {/* Page Header */}
-        <div className="flex justify-between items-center mb-6">
+        {/* <div className="flex justify-between items-center mb-6">
           <h2 className="text-3xl font-bold text-gray-800">
             {getPageTitle(pathname)}
           </h2>
@@ -119,7 +119,7 @@ export default function DashboardLayout({ children }) {
           >
             ← Back to Home
           </button>
-        </div>
+        </div> */}
 
         {/* Dashboard Content */}
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 min-h-[60vh]">
