@@ -226,7 +226,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="container py-16 bg-gradient-to-br from-indigo-400 to-pink-400"
+      className="py-16 bg-gradient-to-br from-indigo-400 to-pink-400"
     >
       <div className="max-w-6xl mx-auto px-6">
         {/* Title */}

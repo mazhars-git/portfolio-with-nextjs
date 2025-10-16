@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     <section className="h-screen bg-gradient-to-l from-gray-200 via-blue-400 to-orange-500 dark:bg-gray-900 pt-5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
