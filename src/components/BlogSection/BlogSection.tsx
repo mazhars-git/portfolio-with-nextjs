@@ -124,7 +124,7 @@ const blogs = [
 
 export default function BlogSection() {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-[#dee2e6] dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Section Title */}
         <motion.h2

@@ -4,7 +4,7 @@ export default function BlogDetails({ params }: any) {
   // Later you can fetch this data from a CMS or database
   // For now, let's just show the slug
   return (
-    <main className="min-h-screen bg-gray-50 py-16 px-6">
+    <main className="container min-h-screen bg-gray-50 py-16 px-6">
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
         <h1 className="text-3xl font-bold text-indigo-600 mb-4 capitalize">
           {slug.replace(/-/g, " ")}
