@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function About() {
+export default function AboutSection() {
   return (
     <section
       id="about"
-      className="container bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-20 flex items-center justify-center"
+      className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-20 flex items-center justify-center"
     >
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side - Image */}
@@ -74,7 +74,7 @@ export default function About() {
           {/* Buttons */}
           <div className="flex gap-4">
             <Link
-              href="#projects"
+              href="/projects"
               className="px-5 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition"
             >
               View Projects

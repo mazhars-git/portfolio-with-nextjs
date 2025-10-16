@@ -31,7 +31,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="container py-20 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-950">
+    <section className="container py-20 bg-[#F5F7FA] dark:from-gray-900 dark:to-gray-950">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Section Title */}
         <motion.h2
