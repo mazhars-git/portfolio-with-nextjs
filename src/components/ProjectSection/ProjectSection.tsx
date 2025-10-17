@@ -228,7 +228,7 @@ export default function ProjectsSection() {
       id="projects"
       className="py-16 bg-gradient-to-br from-indigo-400 to-pink-400"
     >
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

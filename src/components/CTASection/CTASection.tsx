@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export default function CTASection() {
   return (
-    <section className="container py-20 bg-gradient-to-r from-indigo-500 to-pink-500 text-white">
-      <div className="max-w-5xl mx-auto px-6 text-center">
+    <section className="w-full py-20 bg-gradient-to-r from-indigo-500 to-pink-500 text-white">
+      <div className="max-w-6xl mx-auto px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

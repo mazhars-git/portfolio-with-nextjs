@@ -92,8 +92,8 @@ const softSkills = [
 
 export default function Skills() {
   return (
-    <section className="container py-20 bg-gradient-to-l from-gray-100 to-gray-300 dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="w-full py-20 bg-gradient-to-l from-gray-100 to-gray-300 dark:bg-gray-900">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-bold text-gray-800 dark:text-white">

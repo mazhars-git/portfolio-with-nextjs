@@ -3,7 +3,7 @@ import React from "react";
 
 const BlogPage = () => {
   return (
-    <div className="container mx-auto">
+    <div className="w-full mx-auto">
       <BlogSection />
     </div>
   );

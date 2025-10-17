@@ -10,7 +10,7 @@ import BlogPage from "./blog/page";
 
 export default function Home() {
   return (
-    <div className="font-sans items-center justify-items-center">
+    <div className="mx-auto font-sans items-center justify-items-center">
       <Hero />
       <About />
       <Skills />
