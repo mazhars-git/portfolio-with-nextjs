@@ -9,11 +9,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Dashboard", href: "/dashboard" },
-    { name: "Contact", href: "/contact" },
+    { name: "HOME", href: "/" },
+    { name: "ABOUT", href: "/about" },
+    { name: "PROJECTS", href: "/projects" },
+    { name: "DASHBOARD", href: "/dashboard" },
+    { name: "BLOGS", href: "/blog" },
+    { name: "CONTACT", href: "/contact" },
   ];
 
   return (

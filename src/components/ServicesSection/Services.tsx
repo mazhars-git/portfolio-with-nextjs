@@ -31,14 +31,14 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="w-full py-20 bg-[#F5F7FA] dark:from-gray-900 dark:to-gray-950">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="w-full py-20 bg-[#2f6690] dark:from-gray-900 dark:to-gray-950">
+      <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8 py-12">
         {/* Section Title */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-gray-800 dark:text-white mb-4"
+          className="text-4xl font-bold text-gray-900 dark:text-white mb-4"
         >
           My{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-500">
@@ -50,7 +50,7 @@ export default function Services() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12"
+          className="text-gray-300 dark:text-gray-300 max-w-2xl mx-auto mb-12"
         >
           Here are some of the services I offer to help you build, design, and
           grow your digital presence.

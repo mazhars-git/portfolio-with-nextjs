@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -24,15 +25,21 @@ export default function ContactSection() {
           </p>
           <ul className="space-y-3">
             <li className="flex items-center space-x-3">
-              <span className="p-2 bg-white/20 rounded-full">📍</span>
+              <span className="p-2 bg-white/20 rounded-full">
+                <MapPin />
+              </span>
               <span>Dhaka, Bangladesh</span>
             </li>
             <li className="flex items-center space-x-3">
-              <span className="p-2 bg-white/20 rounded-full">📞</span>
+              <span className="p-2 bg-white/20 rounded-full">
+                <Phone />
+              </span>
               <span>+880 123 456 789</span>
             </li>
             <li className="flex items-center space-x-3">
-              <span className="p-2 bg-white/20 rounded-full">✉️</span>
+              <span className="p-2 bg-white/20 rounded-full">
+                <Mail />
+              </span>
               <span>hello@example.com</span>
             </li>
           </ul>

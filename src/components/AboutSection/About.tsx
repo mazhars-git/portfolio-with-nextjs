@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function AboutSection() {
   return (
     <section id="about" className="">
-      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side - Image */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -33,12 +33,14 @@ export default function AboutSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-indigo-600 mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-indigo-600 mb-8">About Me</h2>
 
-          <p className="text-gray-700 leading-relaxed mb-6">
+          <p className="text-gray-300 leading-relaxed mb-6">
             Hi! I’m{" "}
-            <span className="font-semibold text-indigo-600">[Your Name]</span>,
-            a passionate <span className="font-semibold">Web Developer</span>{" "}
+            <span className="font-semibold text-indigo-700">
+              Mazharul Islam
+            </span>
+            , a passionate <span className="font-semibold">Web Developer</span>{" "}
             and creative thinker based in Bangladesh. I love building
             responsive, user-friendly applications with modern tools like
             <span className="font-semibold">
@@ -48,7 +50,7 @@ export default function AboutSection() {
             .
           </p>
 
-          <p className="text-gray-700 leading-relaxed mb-6">
+          <p className="text-gray-300 leading-relaxed mb-6">
             My goal is to craft clean, efficient, and accessible web solutions
             that make a difference. I also enjoy teaching and helping others
             learn programming and design.
@@ -77,7 +79,7 @@ export default function AboutSection() {
               View Projects
             </Link>
             <Link
-              href="/cv.pdf"
+              href="/Resume.pdf"
               target="_blank"
               className="px-5 py-3 border border-indigo-600 text-indigo-600 rounded-lg font-semibold hover:bg-indigo-600 hover:text-white transition"
             >

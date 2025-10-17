@@ -6,12 +6,12 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen ">
+    <section className=" ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text content */}
           <div>
-            <h1 className="mb-3 text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white">
+            <h1 className="mb-6 text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white">
               Hi, I’m <span className="text-indigo-600">Mazharul Islam</span>
             </h1>
 
@@ -28,10 +28,10 @@ export default function HeroSection() {
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className="block text-xl md:text-2xl font-medium text-blue-900"
+              className="block text-xl md:text-2xl font-medium text-gray-800"
             />
 
-            <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">
+            <p className="mt-6 text-lg text-slate-600 dark:text-gray-300">
               I’m a web developer who loves building clean, modern & fast
               websites. This is my portfolio where you can explore my projects
               and skills.
