@@ -9,13 +9,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <Image
-              src="/images/logo-2.png"
-              width={150}
-              height={150}
-              alt="logo"
-              className="object-cover"
-            />
+            <Link href="/">
+              <Image
+                src="/images/logo-2.png"
+                width={150}
+                height={150}
+                alt="logo"
+                className="object-cover"
+              />
+            </Link>
             <p className="mt-2 text-sm">
               A showcase of my work, passion and creativity.
             </p>

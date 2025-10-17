@@ -22,13 +22,15 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center text-2xl font-bold text-indigo-600">
-            <Image
-              src="/images/mazhar (2).png"
-              alt="logo"
-              width={150}
-              height={100}
-              className="object-cover"
-            />
+            <Link href="/">
+              <Image
+                src="/images/mazhar (2).png"
+                alt="logo"
+                width={150}
+                height={100}
+                className="object-cover"
+              />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
