@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function HeroSection() {
   return (
-    <section className="h-screen bg-gradient-to-l from-gray-200 via-blue-400 to-orange-500 dark:bg-gray-900 pt-5">
+    <section className="min-h-screen ">
       <div className="max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text content */}
