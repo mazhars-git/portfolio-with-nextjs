@@ -4,7 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 p-6">
+    <section className="py-20 min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 p-6">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -106,6 +106,6 @@ export default function ContactSection() {
           </form>
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 }
