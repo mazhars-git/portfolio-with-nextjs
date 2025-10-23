@@ -4,7 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-400 p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 p-6">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function ContactSection() {
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="bg-gradient-to-br from-sky-800 to-indigo-400 text-white p-8 flex flex-col justify-center"
+          className="bg-gradient-to-br from-pink-500 to-indigo-500 text-white p-8 flex flex-col justify-center"
         >
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
           <p className="text-slate-100 mb-6">
