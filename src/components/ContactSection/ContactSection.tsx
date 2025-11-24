@@ -34,13 +34,13 @@ export default function ContactSection() {
               <span className="p-2 bg-white/20 rounded-full">
                 <Phone />
               </span>
-              <span>+880 123 456 789</span>
+              <span>+880 1309075511</span>
             </li>
             <li className="flex items-center space-x-3">
               <span className="p-2 bg-white/20 rounded-full">
                 <Mail />
               </span>
-              <span>hello@example.com</span>
+              <span>mazharulisalm611@gmail.com</span>
             </li>
           </ul>
         </motion.div>
