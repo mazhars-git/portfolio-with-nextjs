@@ -76,14 +76,14 @@ export default function AboutSection() {
               href="/projects"
               className="px-5 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition"
             >
-              View Projects
+              View My Projects
             </Link>
             <Link
               href="/Resume.pdf"
               target="_blank"
               className="px-5 py-3 border border-indigo-600 text-indigo-600 rounded-lg font-semibold hover:bg-indigo-600 hover:text-white transition"
             >
-              Download CV
+              Download My Resume
             </Link>
           </div>
         </motion.div>
