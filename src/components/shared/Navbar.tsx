@@ -149,6 +149,7 @@ const navLinks = [
   { name: "Projects", href: "/projects" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
+  { name: "Login", href: "/login" },
 ];
 
 export default function Navbar() {
