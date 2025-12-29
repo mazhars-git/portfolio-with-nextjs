@@ -9,6 +9,7 @@ import {
 } from "../ui/field";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 export function LoginForm({
   className,
@@ -88,9 +89,11 @@ export function LoginForm({
             </FieldGroup>
           </form>
           <div className="bg-muted relative hidden md:block">
-            <img
-              src="/placeholder.svg"
-              alt="Image"
+            <Image
+              src="/login.jpg"
+              width={100}
+              height={100}
+              alt="login image"
               className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
             />
           </div>

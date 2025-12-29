@@ -13,7 +13,7 @@ const navLinks = [
   { name: "Projects", href: "/projects" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
-  // { name: "Login", href: "/login" },
+  { name: "Login", href: "/login" },
 ];
 
 export default function Navbar() {
@@ -73,7 +73,7 @@ export default function Navbar() {
             </motion.div>
           ))}
 
-          <Link href="/login">Login</Link>
+          {/* <Link href="/login">Login</Link> */}
 
           {/* 🌗 Theme Toggle Button */}
           <button
