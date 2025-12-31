@@ -35,10 +35,6 @@ export function SignupForm({
                   placeholder="m@example.com"
                   required
                 />
-                <FieldDescription>
-                  We&apos;ll use this to contact you. We will not share your
-                  email with anyone else.
-                </FieldDescription>
               </Field>
               <Field>
                 <Field className="grid grid-cols-2 gap-4">
@@ -102,10 +98,10 @@ export function SignupForm({
           </form>
           <div className="bg-muted relative hidden md:block">
             <Image
-              src="/placeholder.svg"
+              src="/images/login.jpg"
               alt="Image"
-              width="100"
-              height="100"
+              width="250"
+              height="250"
               className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
             />
           </div>
