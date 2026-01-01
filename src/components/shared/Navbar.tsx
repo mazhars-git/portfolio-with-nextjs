@@ -89,7 +89,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/dashboard"
-            className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-md shadow-lg hover:from-indigo-600 hover:to-purple-700 transition"
+            className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-full shadow-lg hover:from-indigo-700 hover:to-purple-900 transition"
           >
             Dashboard
           </Link>
@@ -148,7 +148,7 @@ export default function Navbar() {
 
             <Link
               href="/dashboard"
-              className="block bg-gradient-to-r from-indigo-500 to-purple-600 text-center text-white px-4 py-2 rounded-full shadow-lg hover:from-indigo-600 hover:to-purple-700 transition"
+              className="block bg-gradient-to-r from-indigo-500 to-purple-600 text-center text-white px-4 py-2 rounded-full shadow-lg hover:from-indigo-700 hover:to-purple-900 transition"
               onClick={() => setIsOpen(false)}
             >
               Dashboard
