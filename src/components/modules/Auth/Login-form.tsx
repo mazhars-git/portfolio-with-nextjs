@@ -11,13 +11,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { signIn } from "next-auth/react";
 
 export function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
   const handleSocialLogin = (provider: "google" | "meta") => {
-    console.log(`Login with ${provider}`);
+    signIn("google", {
+      callbackUrl: "/dashboard",
+    });
   };
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
