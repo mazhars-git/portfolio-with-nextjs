@@ -13,6 +13,8 @@ import {
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
+import { Button } from "../ui/button";
+import { signOut, useSession } from "next-auth/react";
 
 export default function DashboardLayout({ children }) {
   const pathname = usePathname();
@@ -41,6 +43,8 @@ export default function DashboardLayout({ children }) {
       path: "/dashboard/manageTestimonials",
     },
   ];
+
+  const session = useSession();
 
   return (
     <div className="flex min-h-screen bg-gradient-to-br from-indigo-400 via-white to-purple-500 pt-16">
@@ -86,18 +90,20 @@ export default function DashboardLayout({ children }) {
 
         {/* Footer Buttons */}
         <div className="p-4 border-t flex flex-col gap-2">
-          <button
+          <Button
             onClick={() => router.push("/")}
-            className="flex items-center gap-2 text-indigo-600 hover:bg-indigo-100 p-2 rounded transition"
+            className="flex items-center gap-2 text-gray-100 hover:bg-green-500 p-2 rounded transition"
           >
             <ArrowLeft size={18} /> {!collapsed && "Back to Home"}
-          </button>
-          <button
-            onClick={() => alert("Logging out...")}
-            className="flex items-center gap-2 text-red-500 hover:bg-red-100 p-2 rounded transition"
-          >
-            <LogOut size={18} /> {!collapsed && "Logout"}
-          </button>
+          </Button>
+          {session.status === "authenticated" && (
+            <Button
+              onClick={() => signOut()}
+              className="flex items-center gap-2 text-gray-100 font-semibold hover:bg-red-400 p-2 rounded transition"
+            >
+              <LogOut size={18} /> {!collapsed && "Logout"}
+            </Button>
+          )}
         </div>
       </motion.aside>
 

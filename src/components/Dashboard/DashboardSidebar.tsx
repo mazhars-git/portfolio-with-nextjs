@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Home, User, Settings, FileText, LogOut, Menu } from "lucide-react";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 const navItems = [
   { name: "Overview", icon: <Home size={20} />, path: "/dashboard" },
@@ -64,10 +65,10 @@ export default function DashboardSidebar() {
 
         {/* Footer / Logout */}
         <div className="p-4 border-t border-white/20">
-          <button className="flex items-center gap-4 p-3 w-full hover:bg-white/10 rounded-lg transition">
+          <Button className="flex items-center gap-4 p-3 w-full hover:bg-white/20 rounded-lg transition">
             <LogOut size={20} />
             {isOpen && <span className="text-sm font-medium">Logout</span>}
-          </button>
+          </Button>
         </div>
       </motion.aside>
 
