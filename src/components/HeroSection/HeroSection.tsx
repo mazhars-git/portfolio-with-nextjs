@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
+import StatsSection from "./StatsSection";
 
 export default function HeroSection() {
   return (
@@ -64,6 +65,10 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
+
+        {/* counter section */}
+
+        <StatsSection />
       </div>
     </section>
   );
