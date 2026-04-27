@@ -45,8 +45,8 @@ function Counter({ target, label }) {
 
 export default function StatsSection() {
   return (
-    <section className="py-10 ">
-      <div className="max-w-3xl px-6 grid grid-cols-2 md:grid-cols-4 gap-2">
+    <section className="py-8">
+      <div className="max-w-2xl grid grid-cols-2 md:grid-cols-4 gap-2">
         <Counter target={25} label="Projects Completed" />
         <Counter target={15} label="Happy Clients" />
         <Counter target={2} label="Years Experience" />
